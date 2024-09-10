@@ -15,75 +15,73 @@ ul{
     margin: 0px;
 }
 
-body > header {
-    background-color: orange;
-    color: white;
-    height: 10vh;
-
-    display: flex ;
+#main-header {
+    background-color: rgb(165, 243, 243);
+    color: rgb(0, 17, 255);
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-between;
 }
 
-
-body > header > nav > ul {
+#menu {
     list-style: none;
     text-decoration: none;
     display: flex;
-    justify-content: space-evenly;
-}
-
-#nav-ul > li {
+    justify-content: space-around;
     padding: 8px;
     margin: 16px;
+    
 }
 
+
 .navbutton {
-    color:white; 
     text-decoration: none;
     padding: 12px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 17, 255);
     border-radius: 10%;
 }
 
-body > main article {
-    width: 70%; 
-    margin: auto;
-}
 
-#main-content {
+#main {
     display: flex;
-    justify-content: space-around;
 }
 
-#main-content > div {
-    width: 70%;
+
+img {
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
 }
+
+#products {
+    display: grid;
+    grid-template-areas:
+    "product_1 product_2"
+    "product_3 product_4"
+    "product_5 product_6";
+}
+
 
 form{
     text-align: center;
 }
 
-h2{
-    text-align: center;
-}
 
-body > footer {
-    background-color: orange;
+footer {
+    background-color: rgb(165, 243, 243);
+    color: rgb(0, 17, 255);
     display: flex;
 }
 
-img {
-    border-radius: 100%;
-}
-
-#footer-ul {
-    display: flex;
+#footer-menu {
     list-style: none;
+    text-decoration: none;
+    display: flex;
+    
 }
 
-#footer-ul > div > li {
-    margin-left: 15px;
+#footer-menu > div > li {
+    margin-right: 20px;
     text-decoration: none;
-    color: white;
 }
